@@ -15,7 +15,7 @@ export default function MyApp() {
         // <br />. Your component also can’t return multiple JSX tags. 
         // You have to wrap them into a shared parent, like a <div>...</div> 
         // or an empty <>...</> wrapper:
-        <div className="background">
+        <div className="background1">
             <h1>Have a look at my app!</h1>
             <p>For more details click the button below</p>
             <MyButton />

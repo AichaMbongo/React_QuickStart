@@ -2,9 +2,18 @@
   text-align: center;
 }
 
-.background {
+.background1 {
   background-color: coral;
 }
+
+.background2 {
+  background-color: rgb(189, 147, 8);
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
 
 .App-logo {
   height: 40vmin;
