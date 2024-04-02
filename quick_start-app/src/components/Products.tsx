@@ -1,10 +1,10 @@
  import React, { useState } from 'react';
 
 const products = [
-    { title: 'Dresses', id: 1 },
-    { title: 'Shoes', id: 2},
-    { title: 'Handbag', id: 3},
-    { title: 'Hair Accessories', id: 4},
+    { title: 'Dresses', inStock: true, id: 1 },
+    { title: 'Shoes', inStock: false, id: 2},
+    { title: 'Handbag', inStock: true, id: 3},
+    { title: 'Hair Accessories', inStock: true, id: 4},
 ];
 
 function ProductButton() {
@@ -27,7 +27,12 @@ function ProductButton() {
                 clicked && (
                     <ul>
                     {products.map(product => (
-                        <li key={product.id}>{product.title}</li>
+                        <li key={product.id} 
+                        style={{
+                            color: product.inStock ? 'green' : 'red'
+                        }}
+                        >{product.title}</li>
+                        
                     ))}
                     </ul>
 
