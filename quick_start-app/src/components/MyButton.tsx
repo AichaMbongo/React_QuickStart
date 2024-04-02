@@ -1,15 +1,18 @@
 
-
+import { useState } from "react";
 // Declare MyButton
 function MyButton () {
-
+ const [count, setCount] = useState(0)
     function handleClick(){
         alert( 'You clicked me!')
+        setCount(count + 1);
     }
 
     return (
         <button onClick={handleClick}> 
-        Click me</button>
+        You have Clicked me {count} times</button>
+
+        
     );
 }
 
@@ -24,6 +27,7 @@ export default function MyApp() {
         <div className="background1">
             <h1>Have a look at my app!</h1>
             <p>For more details click the button below</p>
+            <MyButton />
             <MyButton />
         </div>
     )
